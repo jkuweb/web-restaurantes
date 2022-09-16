@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Rubik&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="bg-video">
+			<video id="bg-video" class="bg-video__content" autoplay loop muted plays-inline>
+  <source src="./assets/video/video-restaurante.mp4" type="video/mp4">
+</video>
+			</div>
+			<div class="header__top wrapper header__flex">
+						<div id="menuToggle">
+						<input type="checkbox">
+						<span></span>
+						<span></span>
+						<span></span>
+						</div>
+				<div class="header__flex-item">
+					<div class="header__logo-box">
+						<svg class="header__logo" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M75 16V104H24L75 16Z" fill="#035E7A" />
+							<path d="M75 16V104H128L75 16Z" fill="#93D3E7" />
+						</svg>
+					</div>
+					<nav class="header__nav">
+						<div class="nav">
+							<ul class="nav__item-list">
+								<li class="nav__item"><a href="" class="nav__link">Vuelos</a></li>
+								<li class="nav__item"><a href="" class="nav__link">Hoteles</a></li>
+								<li class="nav__item"><a href="" class="nav__link">Coches</a></li>
+								<li class="nav__item"><a href="" class="nav__link">Vacaciones</a></li>
+								<li class="nav__item"><a href="" class="nav__link">Ofertas</a></li>
+							</ul>
+							<div class="bottons">
+								<button class="btn header__btn">Registrarse</button>
+								<button class="btn header__btn header__btn--border">Login</button>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<section class="search section-search">
+				<h1 class="search__heading heading-primary">¿Donde&nbsp;vas&nbsp;a&nbsp;comer&nbsp;hoy?</h1>
+				<p class="search__text">Encuentra el mejor restaurante y reserva al mejor precio</p>
+				<form action="#" class="wrapper search__form form">
+					<div class="form__radio">
+						<div class="form__radio-group">
+							<input type="radio" id="round-trip" class="form__radio-input" name="options" value="round-trip">
+							<label for="round-trip" class="form__radio-label">
+								<span class="form__radio-button"></span>
+								<p>3 tenedores</p>
+							</label>
+						</div>
+						<div class="form__radio-group">
+							<input type="radio" id="one-way" class="form__radio-input" name="options" value="one-way">
+							<label for="one-way" class="form__radio-label">
+								<span class="form__radio-button"></span>
+								<p>4 tenedores</p>
+							</label>
+						</div>
+						<div class="form__radio-group">
+							<input type="radio" id="multi-city" class="form__radio-input" name="options" value="multi-city">
+							<label for="multi-city" class="form__radio-label">
+								<span class="form__radio-button"></span>
+								<p>5 tenedores</p>
+							</label>
+						</div>
+					</div>
+					<div class="form__input--one">
+						<label for="origin">¿Dónde?</label>
+						<input type="text" id="origin" name="origin" class="form__input grid-item__two" placeholder="Población, Provincia, Restaurante">
+						<i class="form__icon fas fa-map-marker-alt"></i>
+					</div>
+					<div class="form__input--two">
+						<label for="type">¿Qué tipo de cocina buscas?</label>
+						<input type="text" id="type" name="type" class="form__input grid-item__three" placeholder="Tradicional, Mexicana, Italiana...">
+						<i class="form__icon fas fa-utensils"></i>
+					</div>
+					<div class="form__input--tree">
+						<label for="depart-return">¿Cúando?</label>
+						<input type="date" id="depart-return" name="depart-return" class="form__input grid-item__four" placeholder="Toronto, ON">
+						<i class="form__icon far fa-calendar"></i>
+					</div>
+					<div class="form__input--four">
+						<label for="travellers">¿Para cuantas personas?</label>
+						<select id="travellers" name="travellers" class="form__input grid-item__five custom-select">
+							<option> 1 </option>
+							<option> 3 </option>
+							<option> 4 </option>
+							<option> 5 </option>
+						</select>
+						<i class="form__icon fas fa-user-friends"></i>
+					</div>
+					<div class="form__checkbox">
+						<div class="form__checkbox-group">
+							<input type="checkbox" id="hotel" class="form__checkbox-input" name="options">
+							<label for="hotel" class="form__checkbox-label">
+								<span class="form__checkbox-button"><i class="form__checkbox-icon fas fa-check"></i></span>
+								<p>Parking</p>
+							</label>
+						</div>
+						<div class="form__checkbox-group">
+							<input type="checkbox" id="coche" class="form__checkbox-input" name="options">
+							<label for="coche" class="form__checkbox-label">
+								<span class="form__checkbox-button"><i class="form__checkbox-icon fas fa-check"></i></span>
+								<p>Guardería</p>
+							</label>
+						</div>
+					</div>
+					<div class="form__button">
+						<button type="submit" class="form__button search__btn">
+							<i class="form__button-icon fas fa-search"></i>
+							Buscar Restaurante
+						</button>
+					</div>
+					</div>
+				</form>
+			</section>
+		</header>
+		<main>
+			<section class="section-table">
+				<h2 class="heading-secondary">Los restaurantes + buscados</h2>
+				<table class="table">
+					<tr class="table__header">
+						<th></th>
+						<th>Restaurante</th>
+						<th>Lugar</th>
+						<th>Contacto</th>
+						<th>Reseñas</th>
+						<th>Precio</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td data-label="">
+							<svg class="table-svg" width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="14" cy="12" r="11" stroke="#68D391" stroke-width="2"/>
+								<path d="M13.8613 9.22266L10.7729 16.8643L8.38037 16.8643L13.0068 6.87891L14.7891 6.87891L19.4033 16.8643L17.0107 16.8643L13.8613 9.22266Z" fill="#68D391"/>
+							</svg>
+						</td>
+						<td data-label="Restaurante">Mirazur</td>
+						<td data-label="Lugar">
+							<span> 30 Avenue Aristide Briand</span>
+							<span>Menton, Francia</span>
+						</td>
+						<td data-label="Contacto">
+							<span>+33 4 92 41 86 86</span>
+							<span>reservation@mirazur.fr</span>
+						</td>
+						<td data-label="Reseñas">
+							<svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M124 4L125.796 9.52786H131.608L126.906 12.9443L128.702 18.4721L124 15.0557L119.298 18.4721L121.094 12.9443L116.392 9.52786H122.204L124 4Z" fill="#ECC94B"/>
+								<circle cx="124" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<circle cx="12" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M12 4L13.7961 9.52786H19.6085L14.9062 12.9443L16.7023 18.4721L12 15.0557L7.29772 18.4721L9.09383 12.9443L4.39155 9.52786H10.2039L12 4Z" fill="#ECC94B"/>
+								<circle cx="40" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M40 4L41.7961 9.52786H47.6085L42.9062 12.9443L44.7023 18.4721L40 15.0557L35.2977 18.4721L37.0938 12.9443L32.3915 9.52786H38.2039L40 4Z" fill="#ECC94B"/>
+								<circle cx="68" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M68 4L69.7961 9.52786H75.6085L70.9062 12.9443L72.7023 18.4721L68 15.0557L63.2977 18.4721L65.0938 12.9443L60.3915 9.52786H66.2039L68 4Z" fill="#ECC94B"/>
+								<circle cx="96" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M96 4L97.7961 9.52786H103.608L98.9062 12.9443L100.702 18.4721L96 15.0557L91.2977 18.4721L93.0938 12.9443L88.3915 9.52786H94.2039L96 4Z" fill="#ECC94B"/>
+							</svg>
+							<span>213 votos</span>
+							<span>última 4h 45m</span>
+						</td>
+						<td data-label="Precio">481€</td>
+						<td>
+							<button class="table__btn">Reservar</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<svg class="table-svg" width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="14" cy="12" r="11" stroke="#68D391" stroke-width="2"/>
+								<path d="M13.8613 9.22266L10.7729 16.8643L8.38037 16.8643L13.0068 6.87891L14.7891 6.87891L19.4033 16.8643L17.0107 16.8643L13.8613 9.22266Z" fill="#68D391"/>
+							</svg>
+						</td>
+						<td data-label="Restaurante">Noma</td>
+						<td data-label="Lugar">
+							<span>Refshalevej 96</span>
+							<span>Copenhague, Dinamarca</span>
+						</td>
+						<td data-label="Contacto">
+							<span>+45 3296 3297</span>
+							<span>noma@noma.dk</span>
+						</td>
+						<td data-label="Reseñas">
+							<svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="12" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M12 4L13.7961 9.52786H19.6085L14.9062 12.9443L16.7023 18.4721L12 15.0557L7.29772 18.4721L9.09383 12.9443L4.39155 9.52786H10.2039L12 4Z" fill="#ECC94B"/>
+								<circle cx="40" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M40 4L41.7961 9.52786H47.6085L42.9062 12.9443L44.7023 18.4721L40 15.0557L35.2977 18.4721L37.0938 12.9443L32.3915 9.52786H38.2039L40 4Z" fill="#ECC94B"/>
+								<circle cx="68" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M68 4L69.7961 9.52786H75.6085L70.9062 12.9443L72.7023 18.4721L68 15.0557L63.2977 18.4721L65.0938 12.9443L60.3915 9.52786H66.2039L68 4Z" fill="#ECC94B"/>
+								<circle cx="96" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M96 4L97.7961 9.52786H103.608L98.9062 12.9443L100.702 18.4721L96 15.0557L91.2977 18.4721L93.0938 12.9443L88.3915 9.52786H94.2039L96 4Z" fill="#ECC94B"/>
+							</svg>
+							<span>213 votos</span>
+							<span>última 4h 45m</span>
+						</td>
+						<td data-label="Precio">197€</td>
+						<td>
+							<button class="table__btn">Reservar</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<svg class="table-svg" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="12" cy="14" r="11" transform="rotate(180 12 14)" stroke="#A0AEC0" stroke-width="2"/>
+								<path d="M17.0361 13.0635H6.85547V11.0981H17.0361V13.0635ZM17.0361 18.1294H6.85547V16.1763H17.0361V18.1294Z" fill="#A0AEC0"/>
+							</svg>
+						</td>
+						<td data-label="Restaurante">Etxebarri</td>
+						<td data-label="Lugar">
+							<span>San Juan Plaza, 1</span>
+							<span>Atxondo, Bizkaia</span>
+						</td>
+						<td data-label="Contacto">
+							<span>+34 946 583 042</span>
+							<span>info@asadoretxebarri.com </span>
+						</td>
+						<td data-label="Reseñas">
+							<svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="12" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M12 4L13.7961 9.52786H19.6085L14.9062 12.9443L16.7023 18.4721L12 15.0557L7.29772 18.4721L9.09383 12.9443L4.39155 9.52786H10.2039L12 4Z" fill="#ECC94B"/>
+								<circle cx="40" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M40 4L41.7961 9.52786H47.6085L42.9062 12.9443L44.7023 18.4721L40 15.0557L35.2977 18.4721L37.0938 12.9443L32.3915 9.52786H38.2039L40 4Z" fill="#ECC94B"/>
+								<circle cx="68" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M68 4L69.7961 9.52786H75.6085L70.9062 12.9443L72.7023 18.4721L68 15.0557L63.2977 18.4721L65.0938 12.9443L60.3915 9.52786H66.2039L68 4Z" fill="#ECC94B"/>
+								<circle cx="96" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M96 4L97.7961 9.52786H103.608L98.9062 12.9443L100.702 18.4721L96 15.0557L91.2977 18.4721L93.0938 12.9443L88.3915 9.52786H94.2039L96 4Z" fill="#ECC94B"/>
+							</svg>
+							<span>113 votos</span>
+							<span>última 5 día(s) </span>
+						</td>
+						<td data-label="Precio">367€</td>
+						<td>
+							<button class="table__btn">Reservar</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<svg class="table-svg" width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="15" cy="12" r="11" transform="rotate(180 15 12)" stroke="#FC8181" stroke-width="2"/>
+								<path d="M15.1387 15.7773L18.2271 8.13574L20.6196 8.13574L15.9932 18.1211L14.2109 18.1211L9.59668 8.13574L11.9893 8.13574L15.1387 15.7773Z" fill="#FC8181"/>
+							</svg>
+						</td>
+						<td data-label="Restaurante">Geranium</td>
+						<td data-label="Lugar">
+							<span>Per Henrik Lings Allé 4, 8</span>
+							<span>Copenhagen</span>
+						</td>
+						<td data-label="Contacto">
+							<span>+45 6996 0020</span>
+							<span>info@geranium.dk</span>
+						</td>
+						<td data-label="Reseñas">
+							<svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="12" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M12 4L13.7961 9.52786H19.6085L14.9062 12.9443L16.7023 18.4721L12 15.0557L7.29772 18.4721L9.09383 12.9443L4.39155 9.52786H10.2039L12 4Z" fill="#ECC94B"/>
+								<circle cx="40" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M40 4L41.7961 9.52786H47.6085L42.9062 12.9443L44.7023 18.4721L40 15.0557L35.2977 18.4721L37.0938 12.9443L32.3915 9.52786H38.2039L40 4Z" fill="#ECC94B"/>
+								<circle cx="68" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M68 4L69.7961 9.52786H75.6085L70.9062 12.9443L72.7023 18.4721L68 15.0557L63.2977 18.4721L65.0938 12.9443L60.3915 9.52786H66.2039L68 4Z" fill="#ECC94B"/>
+								<circle cx="96" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M96 4L97.7961 9.52786H103.608L98.9062 12.9443L100.702 18.4721L96 15.0557L91.2977 18.4721L93.0938 12.9443L88.3915 9.52786H94.2039L96 4Z" fill="#ECC94B"/>
+							</svg>
+							<span>114 votos</span>
+							<span>última 6h 45m</span>
+						</td>
+						<td data-label="Precio">587€</td>
+						<td>
+							<button class="table__btn">Reservar</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<svg class="table-svg" width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="14" cy="12" r="11" stroke="#68D391" stroke-width="2"/>
+								<path d="M13.8613 9.22266L10.7729 16.8643L8.38037 16.8643L13.0068 6.87891L14.7891 6.87891L19.4033 16.8643L17.0107 16.8643L13.8613 9.22266Z" fill="#68D391"/>
+							</svg>
+						</td>
+						<td data-label="Restaurante">Mugaritz</td>
+						<td data-label="Lugar">
+							<span>Aldura Aldea, 20</span>
+							<span>Errenteria, Gipuzkoa</span>
+						</td>
+						<td data-label="Contacto">
+							<span>943 522 455</span>
+							<span>info@mugaritz.com</span>
+						</td>
+						<td data-label="Reseñas">
+							<svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="12" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M12 4L13.7961 9.52786H19.6085L14.9062 12.9443L16.7023 18.4721L12 15.0557L7.29772 18.4721L9.09383 12.9443L4.39155 9.52786H10.2039L12 4Z" fill="#ECC94B"/>
+								<circle cx="40" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M40 4L41.7961 9.52786H47.6085L42.9062 12.9443L44.7023 18.4721L40 15.0557L35.2977 18.4721L37.0938 12.9443L32.3915 9.52786H38.2039L40 4Z" fill="#ECC94B"/>
+								<circle cx="68" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M68 4L69.7961 9.52786H75.6085L70.9062 12.9443L72.7023 18.4721L68 15.0557L63.2977 18.4721L65.0938 12.9443L60.3915 9.52786H66.2039L68 4Z" fill="#ECC94B"/>
+							</svg>
+							<span>314 votos</span>
+							<span>última 7 día(s)</span>
+						</td>
+						<td data-label="Precio">467€</td>
+						<td>
+							<button class="table__btn">Reservar</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<svg class="table-svg" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="12" cy="14" r="11" transform="rotate(180 12 14)" stroke="#A0AEC0" stroke-width="2"/>
+								<path d="M17.0361 13.0635H6.85547V11.0981H17.0361V13.0635ZM17.0361 18.1294H6.85547V16.1763H17.0361V18.1294Z" fill="#A0AEC0"/>
+							</svg>
+						</td>
+						<td data-label="Restaurante">Disfrutar</td>
+						<td data-label="Lugar">
+							<span>Villarroel, 163</span>
+							<span>Barcelona</span>
+						</td>
+						<td data-label="Contacto">
+							<span>+34 933 48 68 98</span>
+							<span>info@disfrutar.com</span>
+						</td>
+						<td data-label="Reseñas">
+							<svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="12" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M12 4L13.7961 9.52786H19.6085L14.9062 12.9443L16.7023 18.4721L12 15.0557L7.29772 18.4721L9.09383 12.9443L4.39155 9.52786H10.2039L12 4Z" fill="#ECC94B"/>
+								<circle cx="40" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M40 4L41.7961 9.52786H47.6085L42.9062 12.9443L44.7023 18.4721L40 15.0557L35.2977 18.4721L37.0938 12.9443L32.3915 9.52786H38.2039L40 4Z" fill="#ECC94B"/>
+								<circle cx="68" cy="12" r="11" stroke="#ECC94B" stroke-width="2"/>
+								<path d="M68 4L69.7961 9.52786H75.6085L70.9062 12.9443L72.7023 18.4721L68 15.0557L63.2977 18.4721L65.0938 12.9443L60.3915 9.52786H66.2039L68 4Z" fill="#ECC94B"/>
+							</svg>
+							<span>55 votos</span>
+							<span>última 2h 11m</span>
+						</td>
+						<td data-label="Precio">367€</td>
+						<td>
+							<button class="table__btn">Reservar</button>
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section class="section-cards">
+				<h2 class="heading-secondary">Seleccionados para ti</h2>
+				<div class="cards">
+					<div class="card">
+						<div class="card__header">
+							<img class="card__img" src="./assets/img/restaurant-01.jpg" alt="restaurant image">
+						</div>
+						<div class="card__body">
+							<div class="card__details">
+								<p>WELKHOME</p>
+								<span class="card__sale card__sale--green">Reservar</span>
+								<ul>
+									<li>Calle del Monte Esquinza, 15, 28010 Madrid</li>
+									<li>ES 258€</li>
+									<li>
+										<a href="#">welkhome.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__header">
+							<img class="card__img" src="./assets/img/restaurant-02.jpg" alt="">
+						</div>
+						<div class="card__body">
+							<div class="card__details">
+								<p>Diurno</p>
+								<span class="card__sale card__sale--green">Reservar</span>
+								<ul>
+									<li>Calle de San Marcos, 37, 28004 Madrid</li>
+									<li>ES 541€</li>
+									<li>
+										<a href="#">diurno.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__header">
+							<img class="card__img" src="./assets/img/restaurant-03.jpg" alt="">
+						</div>
+						<div class="card__body">
+							<div class="card__details">
+								<p>Shalakabula</p>
+								<span class="card__sale card__sale--red">Solo queda(n) 1</span>
+								<ul>
+									<li>Calle de Don Ramon de la Cruz, 72, 28007 Madrid</li>
+									<li>ES 321€</li>
+									<li>
+										<a href="#">shalakabula.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__header">
+							<img class="card__img" src="./assets/img/restaurant-04.jpg" alt="">
+						</div>
+						<div class="card__body">
+							<div class="card__details">
+								<p>MACAO</p>
+								<span class="card__sale card__sale--green">Reservar</span>
+								<ul>
+									<li>Calle del Príncipe, 16, 28001 Madrid</li>
+									<li>ES 580€</li>
+									<li>
+										<a href="#">macao.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__header">
+							<img class="card__img" src="./assets/img/restaurant-05.jpg" alt="">
+						</div>
+						<div class="card__body">
+							<div class="card__details">
+								<p>Picasso</p>
+								<span class="card__sale card__sale--red">Solo queda(n) 3</span>
+								<ul>
+									<li>Carrer de Mallorca, 422, 08013 Barcelona</li>
+									<li>ES 145€</li>
+									<li>
+										<a href="#">picasso.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__header">
+							<img class="card__img" src="./assets/img/restaurant-06.jpg" alt="">
+						</div>
+						<div class="card__body">
+							<div class="card__details">
+								<p>Don Curado Tasting</p>
+								<span class="card__sale card__sale--green">Reservar</span>
+								<ul>
+									<li>Rambla del Poblenou, 125, 08018 Barcelona</li>
+									<li>ES 241€</li>
+									<li>
+										<a href="#">doncuradotasting.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__header">
+							<img class="card__img" src="./assets/img/restaurant-07.jpg" alt="">
+						</div>
+						<div class="card__body">
+							<div class="card__details">
+								<p>Sumo</p>
+								<span class="card__sale card__sale--green">Reservar</span>
+								<ul>
+									<li>Carrer de Carcaixent, 4, 46007 Valencia</li>
+									<li>ES 157€</li>
+									<li>
+										<a href="#">sumo.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__header">
+							<img class="card__img" src="./assets/img/restaurant-08.jpg" alt="">
+						</div>
+						<div class="card__body">
+							<div class="card__details">
+								<p>Tobiko</p>
+								<span class="card__sale card__sale--red">Solo queda(n) 5</span>
+								<ul>
+									<li>Carrer de Boix, 46003 Valencia</li>
+									<li>ES 278€</li>
+									<li>
+										<a href="#">tobiko.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="email">
+				<h2 class="heading-secondary email__heading">Suscríbete a nuestro newsletter</h2>
+				<p class="email__text">Códigos promocionales y promociones privadas de hasta 35% de descuento. Simplemente agregue su correo electrónico. Es así de simple.</p>
+				<form action="#">
+					<div class="email__input-wrapper">
+						<input type="text" class="email__input" placeholder="tu-email@ejemplo.com">
+						<button type="submit" class="email__btn">¡Quiero suscribirme!</button>
+					</div>
+				</form>
+			</section>
+			<footer class="footer">
+				<ul class="footer__nav-one">
+					<li><a href="">Nosotros</a></li>
+					<li><a href="">Carreers</a></li>
+					<li><a href="">Móbil</a></li>
+					<li><a href="">Trabaja con nosotros</a></li>
+				</ul>
+				<ul class="footer__nav-two">
+					<li><a href="#">Ayuda/FAQ</a></li>
+					<li><a href="#">Prensa</a></li>
+					<li><a href="#">Afiliación</a></li>
+					<li><a href="#">Nuestros Servicios</a></li>
+					<li><a href="#">Partners</a></li>
+				</ul>
+				<ul class="footer__nav-three">
+					<li><a href="#">Condiciones de uso</a></li>
+					<li><a href="#">Privacidad</a></li>
+					<li><a href="#">Cookies</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+				<div class="footer__currency">
+					<p>Moneda del sitio</p>
+					<select name="states" id="estates">
+						<option value="canada">Canada</option>
+					</select>
+					<select name="money" id="money">
+						<option value="candadian-dolar">Canadian Dollars</option>
+					</select>
+				</div>
+				<div class="footer__line"></div>
+				<div class="footer__social-media">
+					<div class="fb">
+						<a href="#">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</div>
+					<div class="twitter">
+						<a href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</div>
+					<div class="inst">
+						<a href="#">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+					<div class="youtube">
+						<a href="#">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</div>
+					<div class="linkedin">
+						<a href="#">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<p>@2020 Restaurant, Inc.</p>
+				</div>
+					<p class="footer__info">Web desarrollada por <a href="https://josebaquerejeta.com">Joseba Querejeta</a>
+			</footer>
+		</main>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
